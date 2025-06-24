@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent TODO System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="particles-background">
+        <div class="particle" style="--delay: 0s; --duration: 20s;"></div>
+        <div class="particle" style="--delay: 2s; --duration: 25s;"></div>
+        <div class="particle" style="--delay: 4s; --duration: 18s;"></div>
+        <div class="particle" style="--delay: 6s; --duration: 22s;"></div>
+        <div class="particle" style="--delay: 8s; --duration: 30s;"></div>
+        <div class="particle" style="--delay: 10s; --duration: 16s;"></div>
+    </div>
+    
+    <div class="neural-network">
+        <div class="node" style="--x: 10%; --y: 20%; --delay: 0s;"></div>
+        <div class="node" style="--x: 80%; --y: 15%; --delay: 1s;"></div>
+        <div class="node" style="--x: 25%; --y: 70%; --delay: 2s;"></div>
+        <div class="node" style="--x: 75%; --y: 85%; --delay: 3s;"></div>
+        <div class="node" style="--x: 50%; --y: 10%; --delay: 4s;"></div>
+        <div class="connection" style="--x1: 10%; --y1: 20%; --x2: 80%; --y2: 15%; --delay: 0.5s;"></div>
+        <div class="connection" style="--x1: 25%; --y1: 70%; --x2: 75%; --y2: 85%; --delay: 1.5s;"></div>
+        <div class="connection" style="--x1: 50%; --y1: 10%; --x2: 25%; --y2: 70%; --delay: 2.5s;"></div>
+    </div>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>
+                <span class="text-glitch" data-text="INTELLIGENT">INTELLIGENT</span>
+                <span class="text-gradient">TODO</span>
+                <span class="text-pulse">SYSTEM</span>
+            </h1>
+            <div class="status-indicator">
+                <div class="pulse-dot"></div>
+                <span class="status-text">NEURAL NETWORK ACTIVE</span>
+            </div>
+        </div>
+        
+        <div class="input-section">
+            <div class="input-wrapper">
+                <input type="text" id="todoInput" placeholder="Enter task directive..." />
+                <div class="input-scanner"></div>
+            </div>
+            <button id="addBtn">
+                <span class="btn-text">EXECUTE</span>
+                <div class="btn-particles">
+                    <div class="btn-particle"></div>
+                    <div class="btn-particle"></div>
+                    <div class="btn-particle"></div>
+                </div>
+            </button>
+        </div>
+        
+        <div class="todo-list">
+            <div class="list-header">
+                <span class="task-counter">ACTIVE TASKS: <span id="taskCount">0</span></span>
+                <div class="brain-wave"></div>
+            </div>
+            <ul id="todoList"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
